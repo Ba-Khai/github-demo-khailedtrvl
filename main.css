@@ -1,0 +1,220 @@
+.first{
+  width: 100%;  
+  height: 100px;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+}
+:root {
+   --text-color: green;
+}
+h1{
+    --my-color: green;
+color: #000;
+}
+.bai28 h1{
+padding: 0 16px;
+color: #fff;
+position: sticky;
+position: -webkit-sticky;
+top: 0;
+}
+.bai28 h2{
+position: relative;
+top: 100px;
+left: 100px;
+}
+.Absolute{
+    width: 100%;
+    height: 120px;
+    background-color: #333;
+    position: relative;
+}
+.Absolute-child{
+    background-color:rgba(255, 255, 255,0.5);
+    position:absolute;
+    bottom: 5px;
+    top: 0px;
+    right: 5px;
+    left: 5px;
+}
+.con{
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    bottom: 5px;
+    right: 40px;
+}
+
+.box{
+    /* width: 100px; 50vw, 50 vh*/
+    width: 50%;  
+    height: 100px;
+    background-color: red;
+}   
+h1{
+    font-size: 1rem; 
+}
+
+/* vw - width, vh-height */
+/* bai16 */
+.bin{
+    width: calc(120px / 2);  
+    height: 120px;
+    background:rgb(190,124, 157);
+}
+a::after{
+    content: "("attr(href)")";
+}
+.bin::after{
+    content: attr(data-title);
+}
+.box::after{
+    content: attr(data-title);
+}
+/* bai17+18/9 */
+.Stupid{
+    width: 100%;
+    height: 120px;
+    background: rgb(190, 124, 157);
+}
+.Stupid:hover{
+    background-color: slategray;
+}
+.baba h1:hover{
+    color: red;
+}
+li:first-child{
+    color:tomato;
+}
+li:last-child{
+    color: rgb(133, 10, 10);
+    font-size: 20px;
+}
+.Stupid::before{
+    content: " I'm Stupid ";
+    color: rgb(160, 27, 27);
+    display: block;
+    width: 300px;
+    height:2rem;
+    background-color: rgb(186, 196, 97);
+}
+.Stupid::after{
+    content: " I'm Stupid ";
+    color: rgb(160, 27, 27);
+    display: block;
+    width: 300px;
+    height:2rem;
+    background-color: rgb(196, 97, 175);
+}
+h1::first-letter{
+    font-size: 50px;
+}
+h1::first-line{
+    font-size:50px ;
+}
+h1::selection{
+    background-color: violet;
+    color: rgb(12, 180, 34);
+}
+/* bai19+20+21 */
+.away {
+    width: 100px;
+    height: 100px;
+    color:rgb(247, 225, 225);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+.grumble{
+    background-color: violet;
+    padding: 10px 12px 8px 9px;
+    border: 10px solid red;
+}
+.ungainly{
+    background-color: rgb(12, 42, 70);
+    padding: 10px;
+    border-top-width: 10px;
+    border-bottom: 0px;
+    border-style:solid ;
+    border-color:rgb(25, 0, 255);
+}
+.demand{
+    background-color: rgb(37, 58, 54);
+    padding-top: 10px;
+    padding-bottom:10px ;
+    padding-left:10px ;
+    padding-right:10px ;
+    border-width: 10px;
+    border-style:solid ;
+    border-color:yellow;
+    margin-top:20px ;
+    
+}
+.my{
+    width: 100px;
+    height: 100px;
+    color:yellow;
+    background-color: red;
+    padding: 26px;
+    border: 2px solid royalblue;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+.header{
+    width:100%;
+    height: 100px;
+    background-color: darkslategray;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 10px dashed #fff;
+    background-clip: border-box;
+    background-image: linear-gradient(80deg,#333, rgb(177, 43, 43));
+}
+.rich{
+    width:100%;
+    height: 100vh;
+    background-image: 
+    url(https://www.vippng.com/png/full/136-1363240_hand-painted-original-girl-poor-png-and-psd.png),
+    url(https://scontent.fdad3-3.fna.fbcdn.net/v/t1.6435-9/167039308_1422467768093004_2590190090235562128_n.jpg?_nc_cat=100&ccb=1-4&_nc_sid=174925&_nc_ohc=gs41xyDZ_CkAX-dfVGX&tn=v4hEz_OoPoozl5nh&_nc_ht=scontent.fdad3-3.fna&oh=e1856b42f7cce77a62559e8b902d85e4&oe=6134671A); 
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.Shock{
+    width:100%;
+    height: 60vh;
+    background-image: linear-gradient(0, rgba(255, 255, 0,0.5),rgba(0,0, 255,0.5) ),
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYOK9n2vWLM0Th97-sQddZ75t10jwC_RaAubX-E-_A9_b_UI43IdpKyNIyJL_hek2SIBw&usqp=CAU);
+    background-size: 300px;
+    background-repeat:repeat-x ;
+}
+.cry{
+    width:100%;
+    height: 60vh;
+    background-image: 
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOFX2Rkljvi1M92dP4k_UjbnbLV5wuINEki25OqBkZmmxnho-aPjZmUsi8qmENm5rwqNs&usqp=CAU);
+    background-size: 300px;  
+}
+.smile{
+    width:100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: 
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_OM-2m0ItD4TtXehV7U-2nrfNiQcUdxHzirsiAZDRVd-AjP3uyr-Azi2_Zx2PMY5wkow&usqp=CAU);
+    background-size:500px;
+    border: 20px dashed rgb(99, 93, 93);
+    padding: 20px;
+    box-sizing: border-box;
+    background-origin: content-box;
+    /* background-position:bottom center ;  */
+    background-position:100px 50px ;
+
+}
+.mami{
+    width:100%;
+    height: 60vh;
+    background: 
+    url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS66n_q_gm3f-Y6vxnad1ezRY9w8geHZn7swt1WdagN2J6t9AIHGhMyFJNYDxZVvrUrN0I&usqp=CAU) no-repeat center  / contain;    
+}
